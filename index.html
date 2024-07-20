@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Justin Kim</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Justin Kim</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Justin Kim</h1>
+        <p class="section__text__p2">Full Stack Developer </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/justin-kim-4a2781282/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/JustinKim13'"
+          />
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#skills'" />
+    </section>
+
+    <section id="skills">
+      <p class="section__text__p1">Technical</p>
+      <h1 class="title">Skills</h1>
+      <nav class="tabs-container">
+        <form class="container-fluid justify-content-center">
+          <button class="tab-btn" type="button" onclick="openTab(event, 'Languages')">Languages</button>
+          <button class="tab-btn" type="button" onclick="openTab(event, 'Frameworks')">Libraries/Frameworks</button>
+          <button class="tab-btn" type="button" onclick="openTab(event, 'DevTools')">Developer Tools</button>
+        </form>
+      </nav>
+    
+      <div id="Languages" class="tab-content">
+        <div class="skills-category">
+          <div class="skill-box">
+            <ul>
+              <li>
+                <img src="./assets/icons/python.svg" alt="Python" class="skill-icon" />Python
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                  </div>
+                  <span class="progress-label">3 Years</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/java.svg" alt="Java" class="skill-icon" />Java
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div>
+                  </div>
+                  <span class="progress-label">2 Years</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/mysql-icon.svg" alt="SQL" class="skill-icon" />SQL
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div>
+                  </div>
+                  <span class="progress-label">2 Years</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/javascript.svg" alt="JavaScript" class="skill-icon" />JavaScript
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 37%;"></div>
+                  </div>
+                  <span class="progress-label">1.5 Years</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/html-5.svg" alt="HTML5" class="skill-icon" />HTML5
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 62%;"></div>
+                  </div>
+                  <span class="progress-label">2.5 Years</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/css-3.svg" alt="CSS" class="skill-icon" />CSS
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 62%;"></div>
+                  </div>
+                  <span class="progress-label">2.5 Years</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/r-lang.svg" alt="R" class="skill-icon" />R
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div>
+                  </div>
+                  <span class="progress-label">2 Years</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/c-plusplus.svg" alt="C++" class="skill-icon" />C++
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 25%;"></div>
+                  </div>
+                  <span class="progress-label">1 Year</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div id="Frameworks" class="tab-content">
+        <div class="skills-category">
+          <div class="skill-box">
+            <ul>
+              <li>
+                <img src="./assets/icons/pandas-icon.svg" alt="Pandas" class="skill-icon" />Pandas
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div>
+                  </div>
+                  <span class="progress-label">2 Years</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/numpy.svg" alt="NumPy" class="skill-icon" />NumPy
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div>
+                  </div>
+                  <span class="progress-label">2 Years</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/matplotlib-icon.svg" alt="Matplotlib" class="skill-icon" />Matplotlib
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div>
+                  </div>
+                  <span class="progress-label">2 Years</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/scikitlearn.png" alt="Sci-kit Learn" class="skill-icon" />Sci-kit Learn
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 37%;"></div>
+                  </div>
+                  <span class="progress-label">1.5 Years</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/pytorch-icon.svg" alt="PyTorch" class="skill-icon" />PyTorch
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 37%;"></div>
+                  </div>
+                  <span class="progress-label">1.5 Years</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/springboot.png" alt="Springboot" class="skill-icon" />Springboot
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 25%;"></div>
+                  </div>
+                  <span class="progress-label">1 Year</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/postgresql.svg" alt="PostgreSQL" class="skill-icon" />PostgreSQL
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 37%;"></div>
+                  </div>
+                  <span class="progress-label">1.5 Years</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/react.svg" alt="React" class="skill-icon" />ReactJS
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 37%;"></div>
+                  </div>
+                  <span class="progress-label">1.5 Years</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/django-icon.svg" alt="Django" class="skill-icon" />Django
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div>
+                  </div>
+                  <span class="progress-label">2 Years</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/bootstrap.svg" alt="Bootstrap" class="skill-icon" />Bootstrap
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 25%;"></div>
+                  </div>
+                  <span class="progress-label">1 Year</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/flask.svg" alt="Flask" class="skill-icon" />Flask
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 37%;"></div>
+                  </div>
+                  <span class="progress-label">1.5 Years</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/angular-icon.svg" alt="Angular" class="skill-icon" />Angular
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 25%;"></div>
+                  </div>
+                  <span class="progress-label">1 Year</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/vue.svg" alt="Vue.js" class="skill-icon" />Vue.js
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 25%;"></div>
+                  </div>
+                  <span class="progress-label">1 Year</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/nodejs-icon.svg" alt="Node.js" class="skill-icon" />Node.js
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 25%;"></div>
+                  </div>
+                  <span class="progress-label">1 Year</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div id="DevTools" class="tab-content">
+        <div class="skills-category">
+          <div class="skill-box">
+            <ul>
+              <li>
+                <img src="./assets/icons/git-icon.svg" alt="Git" class="skill-icon" />Git
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 67%;"></div>
+                  </div>
+                  <span class="progress-label">2.5 Years</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/docker-icon.svg" alt="Docker" class="skill-icon" />Docker
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 25%;"></div>
+                  </div>
+                  <span class="progress-label">1 Year</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/kubernetes.svg" alt="Kubernetes" class="skill-icon" />Kubernetes
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 25%;"></div>
+                  </div>
+                  <span class="progress-label">1 Year</span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icons/microsoft-azure.svg" alt="Azure" class="skill-icon" />Azure
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 25%;"></div>
+                  </div>
+                  <span class="progress-label">1 Year</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
+    </section>     
+    
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="container">
+        <div class="timeline">
+          <div class="timeline-item left wow slideInRight" data-wow-delay="0.1s">
+            <div class="timeline-text">
+              <div class="timeline-date">June 2024 - Present</div>
+              <h2>Machine Learning Engineer</h2>
+              <h4>Astro AI Trading</h4>
+            </div>
+          </div>
+          <div class="timeline-item right wow slideInLeft" data-wow-delay="0.1s">
+            <div class="timeline-text">
+              <div class="timeline-date">January 2024 - June 2024</div>
+              <h2>Data Science Intern</h2>
+              <h4>Astro AI Trading</h4>
+            </div>
+          </div>
+          <div class="timeline-item left wow slideInRight" data-wow-delay="0.1s">
+            <div class="timeline-text">
+              <div class="timeline-date">September 2023 - January 2023</div>
+              <h2>Led Software Engineering Club Team</h2>
+              <h4>Madison, WI</h4>
+            </div>
+          </div>
+          <div class="timeline-item right wow slideInLeft" data-wow-delay="0.1s">
+            <div class="timeline-text">
+              <div class="timeline-date">September 2023</div>
+              <h2>Started at UW Madison</h2>
+              <h4>Madison, WI</h4>
+            </div>
+          </div>
+        </div>
+      </div>    
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jtkimmn13@gmail.com">jtkimmn13@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/justin-kim-4a2781282/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Justin Kim. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
