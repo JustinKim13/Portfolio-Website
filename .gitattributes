@@ -1,1 +1,2 @@
 assets/project-1-demo.mov filter=lfs diff=lfs merge=lfs -text
+assets/project-1-demo-compressed.mov filter=lfs diff=lfs merge=lfs -text
