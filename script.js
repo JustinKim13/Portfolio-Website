@@ -31,3 +31,21 @@ document.addEventListener("DOMContentLoaded", function() {
   document.querySelector('.tab-btn').click();
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  const timelineItems = document.querySelectorAll('.timeline-item');
+
+  function startTimelineAnimation() {
+    const triggerPoint = window.innerHeight * 0.9; 
+
+    timelineItems.forEach(item => {
+      const itemTop = item.getBoundingClientRect().top;
+
+      if (itemTop < triggerPoint) {
+        item.classList.add('animate');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', startTimelineAnimation);
+  startTimelineAnimation(); 
+});
