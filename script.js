@@ -49,3 +49,23 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener('scroll', startTimelineAnimation);
   startTimelineAnimation(); 
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const skillBoxes = document.querySelectorAll('.skill-box');
+
+  function checkSkillBoxesInView() {
+    const triggerPoint = window.innerHeight * 0.9; 
+
+    skillBoxes.forEach(box => {
+      const boxTop = box.getBoundingClientRect().top;
+
+      if (boxTop < triggerPoint) {
+        box.classList.add('in-view');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', checkSkillBoxesInView);
+  checkSkillBoxesInView(); 
+});
+
